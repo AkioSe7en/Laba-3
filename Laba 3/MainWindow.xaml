@@ -1,12 +1,55 @@
-﻿<Window x:Class="Laba_3.MainWindow"
+﻿<Window x:Class="Laba3_wpf.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Laba_3"
+        xmlns:local="clr-namespace:Laba3_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="900">
+        Title="MainWindow" Height="600" Width="1300" MinHeight="600" MinWidth="1000"
+        Background="MediumSeaGreen">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="7" TextAlignment="Center" Foreground="MediumBlue" FontSize="40">ИС "Вангерс ин 2022"</TextBlock>
+        
+        <Button Grid.Row="10" Grid.Column="7" Name="CreateBD" Click="CreateBD_OnClick" Width="130" Height="40"><TextBlock TextAlignment="Center"> Создать <LineBreak/> базу данных </TextBlock></Button>
+        <Button Grid.Row="10" Grid.Column="8" Name="WriteBD" Click="WriteBD_OnClick" Width="130" Height="40"><TextBlock TextAlignment="Center"> Вывести всю <LineBreak/> базу данных </TextBlock></Button>
+        
+        <Button Grid.Row="3" Grid.Column="1" Name="Z1" Click="Z1_OnClick"><TextBlock TextAlignment="Center"> Alfa Romeo <LineBreak/> на складе </TextBlock></Button>
+        <Button Grid.Row="3" Grid.Column="3" Name="Z2" Click="Z2_OnClick"><TextBlock TextAlignment="Center"> Склады с BMW </TextBlock></Button>
+        <Button Grid.Row="3" Grid.Column="5" Name="Z3" Click="Z3_OnClick"><TextBlock TextAlignment="Center"> Машины дешевле <LineBreak/> 10000$ </TextBlock></Button>
+        <Button Grid.Row="3" Grid.Column="7" Name="Z4" Click="Z4_OnClick"><TextBlock TextAlignment="Center">Машины <LineBreak/> с пометкой</TextBlock></Button>
+        <Button Grid.Row="4" Grid.Column="2" Name="Z5" Click="Z5_OnClick"><TextBlock TextAlignment="Center">Склады с машинами<LineBreak/>2000-2005 гг.</TextBlock></Button>
+        <Button Grid.Row="4" Grid.Column="4" Name="Z6" Click="Z6_OnClick"><TextBlock TextAlignment="Center">Машины до 2000 г.</TextBlock></Button>
+        <Button Grid.Row="4" Grid.Column="6" Name="Z7" Click="Z7_OnClick"><TextBlock TextAlignment="Center">Вывод машин<LineBreak/>в файл .txt</TextBlock></Button>
+        
+        <DataGrid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="4" Name="Table1" IsEnabled="False"></DataGrid>
+        
+       <!-- <ScrollViewer></ScrollViewer>
+        <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="4" Name="WriteBox" Background="White" FontSize="17"></TextBlock> -->
 
     </Grid>
 </Window>
