@@ -46,7 +46,7 @@
         <Button Grid.Row="4" Grid.Column="4" Name="Z6" Click="Z6_OnClick"><TextBlock TextAlignment="Center">Машины до 2000 г.</TextBlock></Button>
         <Button Grid.Row="4" Grid.Column="6" Name="Z7" Click="Z7_OnClick"><TextBlock TextAlignment="Center">Вывод машин<LineBreak/>в файл .txt</TextBlock></Button>
         
-        <DataGrid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="4" Name="Table1" IsEnabled="False"></DataGrid>
+        <DataGrid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="4" Name="Table1"></DataGrid>
         
        <!-- <ScrollViewer></ScrollViewer>
         <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="4" Name="WriteBox" Background="White" FontSize="17"></TextBlock> -->
